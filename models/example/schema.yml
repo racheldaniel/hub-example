@@ -13,6 +13,7 @@ models:
 
     - name: my_second_dbt_model
       access: public
+      group: marketing_team
       description: "A starter dbt model"
       columns:
           - name: id
@@ -20,3 +21,10 @@ models:
             tests:
                 - unique
                 - not_null
+
+
+groups:
+  - name: marketing_team
+    owner:
+      email: marketing_team@mycoolcompany.com
+
