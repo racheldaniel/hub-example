@@ -13,7 +13,6 @@ models:
 
     - name: my_second_dbt_model
       access: public
-      group: marketing_team
       description: "A starter dbt model"
       columns:
           - name: id
