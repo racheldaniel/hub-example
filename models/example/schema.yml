@@ -24,7 +24,7 @@ models:
 
 
 groups:
-  - name: marketing_team
+  - name: finance
     owner:
-      email: marketing_team@mycoolcompany.com
+      email: finance@mycoolcompany.com
 
