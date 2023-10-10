@@ -20,10 +20,3 @@ models:
             tests:
                 - unique
                 - not_null
-
-
-groups:
-  - name: finance
-    owner:
-      email: finance@mycoolcompany.com
-
