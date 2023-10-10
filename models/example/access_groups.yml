@@ -1,0 +1,6 @@
+version: 2
+
+groups:
+  - name: ecommerce
+    owner:
+      email: ecommerce@mycoolcompany.com
