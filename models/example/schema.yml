@@ -13,6 +13,13 @@ models:
 
     - name: my_second_dbt_model
       access: public
+      config:
+       contract:
+        enforced: true
+      latest_version: 0
+      versions:
+       - v: 0
+       - v: 1
       description: "A starter dbt model"
       columns:
           - name: id
