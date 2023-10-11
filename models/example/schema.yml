@@ -14,16 +14,17 @@ models:
     - name: my_second_dbt_model
       access: public
       config:
-       contract:
-        enforced: true
+        contract:
+          enforced: true
+      columns:
+          - name: id
+            data_type: numeric
+
       latest_version: 0
       versions:
        - v: 0
        - v: 1
-      description: "A starter dbt model"
-      columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
+         columns:
+          - include: all
+          - name: another_column
+            data_type: text
