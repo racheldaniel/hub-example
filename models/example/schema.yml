@@ -19,12 +19,11 @@ models:
       columns:
           - name: id
             data_type: numeric
-
-     # latest_version: 0
-     # versions:
-     #  - v: 0
-     #  - v: 1
-     #    columns:
-     #     - include: all
-     #     - name: another_column
-     #       data_type: text
+      latest_version: 0
+      versions:
+        - v: 0
+        - v: 1
+          columns:
+          - include: all
+          - name: another_column
+            data_type: text
