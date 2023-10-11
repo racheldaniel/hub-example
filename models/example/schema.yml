@@ -11,7 +11,7 @@ models:
                 - unique
                 - not_null
 
-    - name: my_second_dbt_model_v1
+    - name: my_second_dbt_model
       access: public
       #config:
        # contract:
@@ -19,11 +19,11 @@ models:
       columns:
           - name: id
             data_type: numeric
-      # latest_version: 1
-      # versions:
-      #   - v: 1
-      #   - v: 2
-      #     columns:
-      #     - include: all
-      #     - name: another_column
-      #       data_type: text
+      latest_version: 1
+      versions:
+        - v: 1
+        - v: 2
+          columns:
+          - include: all
+          - name: another_column
+            data_type: text
